@@ -6,7 +6,7 @@ const content = `<h1>hello world~</h1>`;
 
 test('render editor', () => {
   render(<Editor content={content} />);
-  const element = screen.getByText(/t-editor/i);
+  const element = screen.getByText(/at/i);
   // @ts-ignore
   expect(element).toBeInTheDocument();
 });
