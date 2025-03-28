@@ -2,8 +2,8 @@
 
 ### 介绍
 
-首先感谢你关注 Tiptap-Editor 富文本编辑器，并进行代码贡献。
-以下是关于向 Tiptap-Editor 提交代码的指南。在向 Tiptap-Editor 提交 Issue 或者 MR 之前，请先花几分钟时间阅读以下文字
+首先感谢你关注 antd-richtext 富文本编辑器，并进行代码贡献。
+以下是关于向 antd-richtext 提交代码的指南。在向 antd-richtext 提交 Issue 或者 MR 之前，请先花几分钟时间阅读以下文字
 
 ### Issue 规范
 
