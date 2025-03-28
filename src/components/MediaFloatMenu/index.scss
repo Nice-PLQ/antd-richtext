@@ -1,0 +1,28 @@
+@use '../../assets/style/var.scss';
+
+.#{var.$prefix}-media-float-menu {
+  border: 1px solid #E6E8EB;
+  background-color: #FFF;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  padding-right: 8px;
+
+  .#{var.$prefix}-media-float-input {
+    font-size: 14px;
+    input {
+      padding: 2px 8px;
+      background: #F3F4F5;
+      border-radius: 4px;
+      border: none;
+      outline: none;
+      width: 50px;
+      font-size: 14px;
+      margin-right: 4px;
+      &:disabled {
+        color: #ccc;
+        cursor: not-allowed;
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+@use '../../assets/style/var.scss';
+
+.#{var.$prefix}__menu--divider {
+  width: 1px;
+  height: 14px;
+  background: #D7DAE0;
+}

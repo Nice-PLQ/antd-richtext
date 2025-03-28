@@ -1,0 +1,57 @@
+@use '../../assets/style/var.scss';
+
+.#{var.$prefix}-emoji {
+  display: flex;
+  width: 400px;
+  height: 280px;
+
+  &-tabs {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    gap: 8px;
+  }
+
+  &-tabs__item {
+    border-radius: 4px;
+    padding: 5px 12px;
+    cursor: pointer;
+
+    &.selected {
+      color: #35F;
+      font-weight: 600;
+      background: #F3F4F5;
+    }
+  }
+
+  &-list {
+    height: 100%;
+    overflow: auto;
+    margin-left: 16px;
+    margin-right: -16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-left: 1px solid #E6E8EB;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 4px;
+  }
+
+  &__item {
+    &.ant-btn {
+      background-color: transparent;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      > span {
+        font-size: 22px;
+        font-family: Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Segoe UIpx !important;
+      }
+
+      &:hover {
+        background-color: #d7dae0;
+      }
+    }
+  }
+}

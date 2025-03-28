@@ -1,0 +1,24 @@
+@use '../../assets/style/var.scss';
+
+.#{var.$prefix}__menu-columns {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  gap: 10px;
+
+  .#{var.$prefix}__menu-column {
+    width: 16px;
+    height: 80px;
+    border-radius: 4px;
+    border: 1px solid #D7DAE0;
+    cursor: pointer;
+
+    &.active {
+      background: var(--primary-color);
+      border-color: var(--primary-color);
+    }
+    &.disabled {
+      cursor: not-allowed;
+    }
+  }
+}
