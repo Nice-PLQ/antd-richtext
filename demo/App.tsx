@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react';
-import { Space, Button, Select, BackTop } from 'antd/es';
+import { Space, Button, Select, FloatButton } from 'antd/es';
 import { Content } from '@tiptap/core';
 import { type Editor as EditorType } from '@tiptap/react';
 import { Editor, EditorRender, LocaleProvider, type EditorRef } from '@/index';
@@ -148,7 +148,7 @@ const App = () => {
           </>
         )}
       </div>
-      <BackTop />
+      <FloatButton.BackTop />
     </div>
   );
 };
