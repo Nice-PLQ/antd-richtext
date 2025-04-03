@@ -1,6 +1,6 @@
 {
   "name": "antd-richtext",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A WYSIWYG rich text editor, using Tiptap and Antd",
   "module": "esm/index.js",
   "typings": "esm/index.d.ts",
@@ -20,12 +20,12 @@
     "CHANGELOG.md",
     "package.json"
   ],
-  "author": "link.pan",
-  "license": "ISC",
-  "homepage": "",
+  "author": "plq",
+  "license": "MIT",
+  "homepage": "https://nice-plq.github.io/antd-richtext/",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/Nice-PLQ/antd-richtext"
   },
   "browserslist": [
     "Chrome >= 91",
