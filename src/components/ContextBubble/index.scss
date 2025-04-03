@@ -1,8 +1,0 @@
-@use '../../assets/style/var.scss';
-
-.#{var.$prefix}-context-bubble {
-  border: 1px solid #e6e8eb;
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
-  border-radius: 6px;
-  overflow: hidden;
-}
