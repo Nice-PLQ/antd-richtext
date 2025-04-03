@@ -139,7 +139,7 @@ export function MenuItems() {
         style={{ marginLeft: 'auto' }}
         icon={<GithubFilled />}
         onClick={() => {
-          window.open('./');
+          window.open('https://github.com/Nice-PLQ/antd-richtext');
         }}
       />
     </MenuContainer>
