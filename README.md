@@ -1,10 +1,10 @@
 ## Antd + Tiptap 的富文本编辑器
 
-[编辑器API文档 + DEMO体验](./)
+[编辑器API文档 + DEMO体验](https://nice-plq.github.io/antd-richtext/)
 
 ### 1、项目介绍
 
-适用于PC端的富文本编辑器，基于Antd + [Tiptap2](https://tiptap.dev/docs/editor/getting-started/overview)开发，使用说明请参考[文档](./)
+适用于PC端的富文本编辑器，基于Antd + [Tiptap2](https://tiptap.dev/docs/editor/getting-started/overview)开发，使用说明请参考[文档](https://nice-plq.github.io/antd-richtext/)
 
 ### 2、项目技术栈
 
