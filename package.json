@@ -1,6 +1,6 @@
 {
   "name": "antd-richtext",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A WYSIWYG rich text editor, using Tiptap and Antd",
   "module": "esm/index.js",
   "typings": "esm/index.d.ts",
