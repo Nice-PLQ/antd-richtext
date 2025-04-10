@@ -4,6 +4,7 @@ import { prefix } from '@/constants';
 
 interface Props {
   className?: string;
+  children?: React.ReactNode;
 }
 
 const MenuBar: React.FC<Props> = ({ className, children }) => (
