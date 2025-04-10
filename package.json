@@ -1,6 +1,6 @@
 {
   "name": "antd-richtext",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A WYSIWYG rich text editor, using Tiptap and Antd",
   "module": "esm/index.js",
   "typings": "esm/index.d.ts",
@@ -144,6 +144,7 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "husky": "^9.1.6",
     "jsdom": "^25.0.1",
+    "less": "^4.3.0",
     "lint-staged": "^10.0.7",
     "postcss": "^8.4.45",
     "prettier": "^3.2.4",
