@@ -193,7 +193,7 @@ const MenuList: React.FC<MenuListProps> = (props) => {
         title={locale.columns}
         icon={
           <span className="anticon">
-            <FileSvg />
+            <ColumnSvg />
           </span>
         }
         visible={columnVisible}

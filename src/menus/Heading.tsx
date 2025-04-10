@@ -102,12 +102,11 @@ const MenuButtonHeading: React.FC<MenuButtonHeadingProps> = ({
           key={level}
           icon={icon}
           selected={currentActive === level}
+          label={label}
           onClick={() =>
             level === 0 ? setParagraph() : setHeading(level as Level)
           }
-        >
-          {label}
-        </DropdownItem>
+        />
       ))}
     </MenuButtonDropdown>
   );

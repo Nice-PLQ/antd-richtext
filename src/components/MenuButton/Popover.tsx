@@ -82,6 +82,8 @@ const useMenuPopover = (props: {
         document.removeEventListener('keydown', handleEscapeKey, false);
       };
     }
+
+    return () => {};
   }, [propVisible, handleEscapeKey]);
 
   return {

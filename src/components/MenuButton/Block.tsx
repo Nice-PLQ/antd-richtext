@@ -10,6 +10,7 @@ interface MenuPopoverProps {
   icon: React.ReactNode;
   title: string;
   selected?: boolean;
+  children?: React.ReactNode;
   onVisibleChange?: (visible: boolean) => void;
   onClick?: () => void;
 }

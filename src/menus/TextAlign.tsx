@@ -111,10 +111,9 @@ const MenuButtonTextAlign: React.FC<MenuButtonTextAlignProps> = ({
           key={align}
           icon={icon}
           selected={currentActive === align}
+          label={label}
           onClick={() => setTextAlign(align)}
-        >
-          {label}
-        </DropdownItem>
+        />
       ))}
     </MenuButtonDropdown>
   );

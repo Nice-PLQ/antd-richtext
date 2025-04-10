@@ -56,10 +56,9 @@ const MenuButtonLineHeight: React.FC<MenuButtonLineHeightProps> = ({
         <DropdownItem
           key={lineHeight}
           selected={currentActive === lineHeight}
+          label={String(lineHeight)}
           onClick={() => setLineHeight(lineHeight)}
-        >
-          {lineHeight}
-        </DropdownItem>
+        />
       ))}
     </MenuButtonDropdown>
   );

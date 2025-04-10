@@ -5,7 +5,7 @@ import {
   CheckOutlined,
 } from '@ant-design/icons';
 import cx from 'classnames';
-import { Tooltip, Button, Dropdown, Menu } from 'antd/es';
+import { Tooltip, Button, Dropdown } from 'antd/es';
 import { prefix } from '@/constants';
 
 interface MenuDropdownItemProps {
@@ -15,10 +15,10 @@ interface MenuDropdownItemProps {
   selected: boolean;
   /** 是否禁用 */
   disabled?: boolean;
+  /** 标题 */
+  label: string;
   /** 点击回调 */
   onClick: () => void;
-  /** 子元素 */
-  children?: React.ReactNode;
 }
 
 interface MenuDropdownProps {
@@ -62,26 +62,7 @@ const useMenuDropdown = () => {
  * 菜单下拉项组件
  * 用于显示下拉菜单中的选项
  */
-const MenuDropdownItem: React.FC<MenuDropdownItemProps> = ({
-  icon,
-  onClick,
-  selected,
-  disabled,
-  children,
-}) => (
-  <Menu.Item onClick={onClick} disabled={disabled}>
-    <div
-      className={cx(
-        `${prefix}-menu__dropdown-item`,
-        selected && `${prefix}-menu__dropdown--selected`,
-      )}
-    >
-      {icon}
-      {children}
-      {selected && <CheckOutlined />}
-    </div>
-  </Menu.Item>
-);
+const MenuDropdownItem: React.FC<MenuDropdownItemProps> = () => null;
 
 /**
  * 菜单下拉组件
@@ -99,6 +80,25 @@ const MenuDropdown: React.FC<MenuDropdownProps> = ({
 }) => {
   const { visible, handleVisibleChange, handleMenuClick } = useMenuDropdown();
 
+  const items = React.Children.toArray(children).map(
+    ({ props: { icon, selected, label, onClick }, key }: any) => ({
+      key,
+      icon,
+      label: (
+        <div
+          className={cx(
+            `${prefix}-menu__dropdown-item`,
+            selected && `${prefix}-menu__dropdown--selected`,
+          )}
+        >
+          {label}
+          {selected && <CheckOutlined />}
+        </div>
+      ),
+      onClick,
+    }),
+  );
+
   return (
     <Tooltip placement="top" title={tooltip} destroyTooltipOnHide>
       <Dropdown
@@ -107,7 +107,7 @@ const MenuDropdown: React.FC<MenuDropdownProps> = ({
         open={visible}
         onOpenChange={handleVisibleChange}
         overlayStyle={{ width: dropdownWidth }}
-        overlay={<Menu onClick={handleMenuClick}>{children}</Menu>}
+        menu={{ items, onClick: handleMenuClick }}
       >
         <Button type="text" size="small" className={className} style={style}>
           {activeIcon}

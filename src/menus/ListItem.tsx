@@ -57,19 +57,19 @@ const MenuButtonListItem: React.FC = () => {
       disabled={isDisabled}
     >
       <DropdownItem
+        key="orderedList"
         icon={<OrderedListOutlined />}
         selected={isOrderedList}
+        label={orderedListText}
         onClick={toggleOrderedList}
-      >
-        {orderedListText}
-      </DropdownItem>
+      />
       <DropdownItem
+        key="bulletList"
         icon={<UnorderedListOutlined />}
         selected={isBulletList}
+        label={bulletListText}
         onClick={toggleBulletList}
-      >
-        {bulletListText}
-      </DropdownItem>
+      />
     </MenuButtonDropdown>
   );
 };

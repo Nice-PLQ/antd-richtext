@@ -10,7 +10,7 @@
     "build": "cross-env NODE_ENV=production rollup -c rollup.config.mjs",
     "lint": "npm run lint:js && npm run lint:css",
     "lint:js": "eslint --fix --ext .ts,.tsx ./src",
-    "lint:css": "stylelint --fix \"src/**/*.scss\" --syntax scss",
+    "lint:css": "stylelint --fix \"src/**/*.scss\"",
     "test": "vitest run --coverage",
     "prepare": "husky"
   },
@@ -34,8 +34,7 @@
     "Safari > 13"
   ],
   "lint-staged": {
-    "*.{ts,tsx}": "npm run lint:js",
-    "*.scss": "npm run lint:css"
+    "*.{ts,tsx}": "npm run lint:js"
   },
   "peerDependencies": {
     "@ant-design/icons": "^5.6.1",
@@ -145,7 +144,6 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "husky": "^9.1.6",
     "jsdom": "^25.0.1",
-    "less": "^4.2.2",
     "lint-staged": "^10.0.7",
     "postcss": "^8.4.45",
     "prettier": "^3.2.4",
@@ -155,7 +153,9 @@
     "sass-embedded": "^1.85.1",
     "sass-migrator": "^2.3.1",
     "semantic-release": "^24.1.2",
-    "stylelint": "^13.13.1",
+    "stylelint": "^16.18.0",
+    "stylelint-config-standard-scss": "^14.0.0",
+    "stylelint-scss": "^6.11.1",
     "typescript": "^5.1.6",
     "vite": "^5.3.5",
     "vite-plugin-commonjs": "^0.10.3",

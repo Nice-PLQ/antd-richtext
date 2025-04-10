@@ -58,10 +58,9 @@ const MenuButtonFontSize: React.FC<MenuButtonFontSizeProps> = ({
         <DropdownItem
           key={size}
           selected={currentSize === size}
+          label={size}
           onClick={() => setFontSize(size)}
-        >
-          {size}
-        </DropdownItem>
+        />
       ))}
     </MenuButtonDropdown>
   );

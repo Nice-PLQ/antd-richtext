@@ -176,29 +176,31 @@ const TextBubbleMenu: React.FC = () => {
             className={`${prefix}-menu__more`}
           >
             <DropdownItem
+              key="code"
               icon={<CodeSvg />}
               selected={editor.isActive('code')}
               disabled={!editor.isEditable || !editor.can().toggleCode()}
+              label={locale.code}
               onClick={() => executeCommand('toggleCode')}
-            >
-              {locale.code}
-            </DropdownItem>
+            />
+
             <DropdownItem
+              key="subscript"
               icon={<SubSvg />}
               selected={editor.isActive('subscript')}
               disabled={!editor.isEditable || !editor.can().toggleSubscript()}
+              label={locale.subscript}
               onClick={() => executeCommand('toggleSubscript')}
-            >
-              {locale.subscript}
-            </DropdownItem>
+            />
+
             <DropdownItem
+              key="superscript"
               icon={<SuperSvg />}
               selected={editor.isActive('superscript')}
               disabled={!editor.isEditable || !editor.can().toggleSuperscript()}
+              label={locale.superscript}
               onClick={() => executeCommand('toggleSuperscript')}
-            >
-              {locale.superscript}
-            </DropdownItem>
+            />
           </MenuButtonDropdown>
         </MenuContainer>
       </div>
